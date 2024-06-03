@@ -1,13 +1,17 @@
 
 
 def main():
+    err = False
     one = input("User 1 Enter Rock, Paper, or Scissors: ")
     if one != "Rock" and one != "Paper" and one != "Scissors":
+        err = True
         print("Error: Enter Rock, Paper, or Scissors Only")
     two = input("User 2 Enter Rock, Paper, or Scissors: ")
     if two != "Rock" and two != "Paper" and two != "Scissors":
+        err = True
         print("Error: Enter Rock, Paper, or Scissors Only")
-    print(RPS(one, two))
+    if err == False:
+        print(RPS(one, two))
 
 def RPS(one, two):
     if one == "Rock" and two == "Scissors":
