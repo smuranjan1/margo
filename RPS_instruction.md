@@ -23,13 +23,15 @@ All assignments I send will include a list of expectations, you can think of the
 Expectations:
 - The user can input Rock Paper or Scissors, anything else should print an error
 - The second user can also Rock Paper or Scissors, anything else should print an error
+- If either output is an error, no result should print
 - The game should output who won, make sure to account for all cases including draws
 
 Help:
 - try to split the code up into one or two functions called from the main function (rememeber returning)
+- You may need to nest if statements or use Booleans to keep track of your errors
 - use google or your sister if you need help (google first because you learn just by googling)
 
-Example Output: (Bold Text is User Input)
+Example Outputs: (Bold Text is User Input)
 > User 1 Enter Rock, Paper, or Scissors: **Rock**  
 > User 2 Enter Rock, Paper, or Scissors: **Paper**  
 > User 2 Wins!
@@ -37,10 +39,16 @@ Example Output: (Bold Text is User Input)
 > User 1 Enter Rock, Paper, or Scissors: **Scissors**  
 > User 2 Enter Rock, Paper, or Scissors: **Paper**  
 > User 1 Wins!
->
+
 > User 1 Enter Rock, Paper, or Scissors: **Scissors**  
 > User 2 Enter Rock, Paper, or Scissors: **Scissors**  
 > Draw!
   
 > User 1 Enter Rock, Paper, or Scissors: **Apple**  
-> Error: Enter Rock, Paper, or Scissors Only
+> Error: Enter Rock, Paper, or Scissors Only  
+> User 2 Enter Rock, Paper, or Scissors: **Scissors** 
+
+> User 1 Enter Rock, Paper, or Scissors: **Apple**  
+> Error: Enter Rock, Paper, or Scissors Only  
+> User 2 Enter Rock, Paper, or Scissors: **Chicken**  
+> Error: Enter Rock, Paper, or Scissors Only  
