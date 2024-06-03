@@ -2,6 +2,20 @@
 
 ## Here is your first assignment: Rock Paper Scissors
 
+### Important things I forgot to teach you!!!!
+**Along with >, <, <=, >=, ==, there is also != which means does not equal.**  
+**You can have multiple statements in one if condition using *and* / *or. They do exactly what you think.***  
+Example:
+```python
+    if number > 4 and number < 8:
+        print("This number is greater than 4 but less than 8")
+    elif number != 3 or number != 5:
+        print("This number doesn't equal 3 or 5")
+    elif number == 4 or number == 5 or number == 7:
+        print("Last case")
+```
+***Make sure to pay attention to the fact that you have to write number both times***  
+
 Remember to do git pull to get this instructions file on your computer. If you want to view the file like you can on GitHub, right-click the file and hit Open Preview.
 
 All assignments I send will include a list of expectations, you can think of these as requirements that your code should be able to so. I will also include an example output so you can match the format. Please feel free to message me whenever you have any questitons.
