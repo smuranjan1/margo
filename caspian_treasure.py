@@ -11,7 +11,7 @@ def main():
     print("You found the map on June 7th and are ready to set out on your quest.")
     print("You can only bring one weapon because it is all that fits in your satchel")
     print("You can choose from a spear and a hatchet for weapons. What do you choose?")
-    weapon = int(input("1-Spear\n2-Hatchet"))
+    weapon = int(input("1-Spear\n2-Hatchet\n"))
     if weapon == 1:
         print("Now with your spear and your intellect you set out on your mission")
         path(weapon)
@@ -22,27 +22,30 @@ def main():
 #This Function gives you the choice of what path to take
 def path(weapon):
     trail =0
-    print ("You set out on the path your map is telling you but then there1 is a fork in the path.")
+    print ("You set out on the path your map is telling you but then there is a fork in the path.")
     print("One of the paths goes through the Forest of Dreams  and the other goes through the Cave of Illusion. Where will you go?")
-    trail = int(input("1-Forest Path\n2-Cave Path"))
+    trail = int(input("1-Forest Path\n2-Cave Path\n"))
     if weapon == 1 and trail == 1:
         print ("You then set out with you spear and go into the Forest of Dreams")
         forest(weapon)
     elif weapon == 1 and trail == 2:
         print ("You then set out with you spear and go into the Cave of Illusion")
+        cave (weapon)
     elif weapon ==2 and trail == 1:
         print ("You then set out with you hatchet and go into the Forest of Dreams")
         forest(weapon)
     elif weapon == 2 and trail == 2:
         print ("You then set out with you hatchet and go into the Cave of Illusion")
+        cave (weapon)
 
 # This Function gives you the choice of what Potion to Take
 def forest(weapon):
     potion=0
+
     print("You enter the Forest of dreams and you start to get dreary.")
-    print("Is it the air or the animals in front of you spinning round an round so fast it's making you  a bit dizzy?")
+    print("Is it the air or the animals in front of you spinning round an round so fast it's, making you  a bit dizzy?")
     print("Before you almost blackout you spot 2 potions in front of you, a gray one and a blue one. Which do you choose to drink?")
-    potion=int(input("1-Gray Potion\n2-Blue Potion"))
+    potion=int(input("1-Gray Potion\n2-Blue Potion\n"))
     if potion==1:
         print("The gray potion was a strong sleeping potion putting you in eternal sleep choices away from the treasure")
         print("Restart to change the outcome of your adventure or accept your fate right before the treasure.")
@@ -74,7 +77,7 @@ def companion():
     print("A sign next to them tells you that one of them will guide you to the Caspian's Treasure and the others will lead you to your death.")
     print("There is a Dalmatian, a Sphinx Cat, and a Parrot")
     print("What will you choose to hopefully guide you to your victory?")
-    guide = int(input("1-Dalmatian\n 2-Sphinx Cat \n 3- Parrot"))
+    guide = int(input("1-Dalmatian\n 2-Sphinx Cat \n 3- Parrot\n"))
     if guide == 1:
         print("The Dalmation lead you with it's head up high and with his eyes closed.")
         print("You followed him blindly and you start to daydream of you swimming through gold and then you walk right into a 10 ft 4 in Cactus with foot long spikes.")
@@ -98,8 +101,8 @@ def vault ():
     print ("Their is one final sign giving you a riddle saying, 'What has cities but no houses, forests but no trees, and water but no fish'")
     print("The sign continues to say,'When you are ready, answer away, if it is right, Casppian's Treasure will be yours today.' ")
     print("'Your choices are idea, map, car, bat. What will you choose to put another feather in your hat?'")
-    answer= str(input("1-idea\n2-map\n3-car\n4-bat"))
-    if answer == 1:
+    answer= int(input("1-idea\n2-map\n3-car\n4-bat\n"))
+    if answer == 2:
         print("The vault creaked open and then loads of gold, diamonds, sapphires, and money came flooding out all for you to take home.")
         print("Animals from all over, including the parrot who took you here, worked together to bring the gold, money, and valuable items to your home.")
         print("You went to your hometown with a MASSIVE grin on your face, as you are now known as the'Succesful Seeker of the Caspian Treasure.")
